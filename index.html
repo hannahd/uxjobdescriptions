@@ -1,5 +1,5 @@
 ---
-title: Jekyll Serif - Jekyll Small Business Theme
+title: UX Job Descriptions
 layout: default
 bodyClass: page-home
 ---
@@ -59,7 +59,7 @@ bodyClass: page-home
 
 <hr><hr>
 
-              {% assign groups = site.data.jobs | where: "Company", "Instagram" | group_by: "Company" | sort: 'name'  %}
+              {% assign groups = site.data.jobs | where: "company", "Instagram" | group_by: "company" | sort: 'name'  %}
               <ul>
               {% for g in groups %}
                 {{g.name}} {{ g.items.size }}
@@ -75,7 +75,7 @@ bodyClass: page-home
               <ul>
                 {% for job in site.data.jobs %}
                 <li>
-                    {{ job.Company }}
+                    {{ job.company }}
                 </li>
                 {% endfor %}
               </ul>
