@@ -24,7 +24,6 @@ seo:
   meta_twitter_creator: "@zerostaticio"
 
 
-
 page_gen-dirs: true # uncomment, if you prefer to generate named folders
 
 page_gen:
@@ -32,16 +31,6 @@ page_gen:
     template: 'profile'
     name: 'full_name'
     dir: 'people'
-
-  - data: 'jobs'
-    template: 'job'
-    name: 'Title'
-    dir: 'job'
-
-  - data: 'jobs'
-    template: 'job'
-    name: 'Company'
-    dir: 'company'  
 
   - data: 'pets'
     template: 'pet'
