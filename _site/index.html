@@ -45,10 +45,10 @@
     <div class='header'>
   <div class="container">
     <div class="logo">
-      <a href=""><h1 style="margin-bottom: 0px;">UX Job Descriptions</h1></a>
+      <a href="/"><h1 style="margin-bottom: 0px;">UX Job Descriptions</h1></a>
     </div>
     <div class="logo-mobile">
-      <a href=""><h1 style="margin-bottom: 0px;">UX Jobs</h1></a>
+      <a href="/"><h1 style="margin-bottom: 0px;">UX Jobs</h1></a>
     </div>
     <div id="main-menu" class="main-menu">
   
@@ -84,1767 +84,41 @@
     <div class="intro">
   <div class="container">
     <div class="row justify-content-start">
-      <div class="col-12 col-md-8">
-            <div class="service service-single">
-
-
-              <h1>People (generated from YAML)</h1>
-
-              <ul>
-              
-                <li><a href="people/adolfo-villafiorita/">Adolfo Villafiorita</a></li>
-              
-                <li><a href="people/pietro-molini/">Pietro Molini</a></li>
-              
-                <li><a href="people/aaron-ciaghi/">Aaron Ciaghi</a></li>
-              
-                <li><a href="people/mr.-john-smith/">Mr. John Smith</a></li>
-              
-              </ul>
-
-              <h1>Pets (generated from JSON)</h1>
-
-              <ul>
-              
-                  <li><a href="pets/felix-the-cat/">Felix the Cat</a></li>
-              
-                  <li><a href="pets/fido-the-dog/">Fido The Dog</a></li>
-              
-                  <li><a href="pets/buddy-the-dog/">Buddy The Dog</a></li>
-              
-                  <li><a href="pets/ace-the-dog/">Ace The Dog</a></li>
-              
-                  <li><a href="pets/biscuit-the-cat/">Biscuit The Cat</a></li>
-              
-                  <li><a href="pets/caramel-the-cat/">Caramel The Cat</a></li>
-              
-              </ul>
-
-              <h1>Filter Examples (generated from book in YAML)</h1>
-
-              <h2>Approach 1: Filter Links, Generate all pages</h2>
-
-              <p>In the page <a href="books/index.html">books</a>, the books are organized in two lists: books I have read and those I have not.  However a page is still generated for each book. <b>This is not a filter on the pages being generated: it is only a filter on the links being generated.</b></p>
-
-              <h2>Approach 2: <tt>filter</tt> keyword</h2>
-
-              <p>If the yaml matter has a boolean field (for instance: <tt>filter</tt> or, more evocatively, <tt>publish</tt>), I can specify it in <tt>_config</tt> to select what pages have to be generated.</p>
-
-              <h2>Approach 3: <tt>filter_condition</tt> keyword</h2>
-
-              <p>I can use the <tt>filter_condition</tt> field in <tt>config.yml</tt>. The field takes as argument a string with ruby expression which should evaluate to a Boolean value.  The <tt>filter_condition</tt> is used as an additional selector on top of the <tt>filter</tt> condition.</p>
-
-              <p>See the documentation for more details.</p>
-
-              <h1>Hierarchy Example</h1>
-
-              <p>If your data is structured in a hierarhcy, specify the path to access your data in the <tt>data</tt> field.</p>
-
-              <p>See the file <tt>_data/hierarchy.yml</tt> for a working example.  The pages generated are the following:</p>
-
-              <ul>
-                  
-                  <li>
-                      <a href="hierarchy/professor-x/">Professor X</a>
-                  </li>
-                  
-                  <li>
-                      <a href="hierarchy/scott-summers/">Scott Summers</a>
-                  </li>
-                  
-              </ul>
-
-<hr><hr>
-
-              
-              <ul>
-              
-                {"name"=>"Instagram", "items"=>[{"date"=>"8/9/2014", "slug"=>"communication-designer-instagram-2014", "company"=>"Instagram", "location"=>"Menlo Park, CA", "title"=>"Communication Designer", "level"=>"Mid", "role"=>"Content/Writing", "summary"=>"A Communication Designer will design user-facing communication including product marketing pages, product tours, user education and creative brand campaigns. This person will build and manage visual systems that support brand consistency across all communication channels. \n\nThis person will also work cross-functionally with the Communications team as well as the larger Communication Design team within Facebook. \n\nWe are looking for a creative web designer. You must be comfortable working across many media, you think style exists to support ideas and you’re constantly learning new skills. You have a strong point of view on design. It shows in your writing, speaking and work. When you decide to make something, you see your vision from concept to launch without a lot of hand-holding.\n", "responsibilities"=>"Design and document visual systems\nLead branding and user education projects\nInitiate and ship work that has a big impact\nCollaborate with designers, product managers and engineers\nPresent your work in weekly design critiques\nPromote design thinking at Instagram", "skills"=>nil, "min_qual"=>"Strong portfolio including:\nUser-friendly web design and creative branding work\nExperience with Product Marketing launches huge plus\nDeep knowledge of typography and grid systems\nExpert Adobe skills\nPixel-perfect attention to detail\nCan clearly articulate design decisions\nHistory of self-initiated projects\nWrites well and understands basic content strategy\nMust provide portfolio of work", "pref_qual"=>nil}, {"date"=>"8/9/2014", "slug"=>"design-director-instagram-2014", "company"=>"Instagram", "location"=>"Menlo Park, CA", "title"=>"Design Director", "level"=>"Director", "role"=>"UX Design", "summary"=>"We are looking for a charismatic and visionary design director to lead the Instagram design team. Instagram is a collaborative environment between engineering, product management, and design, a culture where ideas can be sparked by any individual but cannot be realized without a collective effort. As the leader of the design team, your responsibilities go far beyond simple aesthetics: you will coach both engineering and design to empathize with the user and build beautiful, usable experiences that make the ordinary seem extraordinary. You will define the creative process from start to finish, own the responsibility for delivering the highest quality product with your team of talented designers, and be the design visionary for future Instagram products.\n", "responsibilities"=>"Define and refine the process for designing new products\nCoach, mentor, and scale a world-class team of designers and researchers\nGuide a team to craft beautifully-composed layouts and deftly-carved pixels\nFocus on mobile interfaces across iOS, Android, and Windows Phone\nCreate compelling interaction design: it’s not just about how it looks, it’s about how it acts, moves, and feels\nMaintain and refine our brand and identity: our commitment spans beyond what is submitted to the app store\nResearch, test, and analyze: user data informs and guides our design decisions", "skills"=>nil, "min_qual"=>"Demonstrated design leadership\nProven track record of successful team building and management\nImpressive history of shipping successful consumer products\nA strong portfolio that highlights visionary design thinking\nMust provide portfolio of produced work", "pref_qual"=>nil}], "size"=>2}
-                <br><br>
-              
-              </ul>
-
-
-<hr>
-
-              <ul>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Yeh Ideology
-                </li>
-                
-                <li>
-                    Instagram
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Shutterfly
-                </li>
-                
-                <li>
-                    Vimeo
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Instagram
-                </li>
-                
-                <li>
-                    Trunk Club
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Zillow
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Uber
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Crashlyitics
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Dropbox
-                </li>
-                
-                <li>
-                    Fog Creek
-                </li>
-                
-                <li>
-                    SquareSpace
-                </li>
-                
-                <li>
-                    Mail Chimp
-                </li>
-                
-                <li>
-                    Flowdock
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    ETrade
-                </li>
-                
-                <li>
-                    Trulia
-                </li>
-                
-                <li>
-                    Yeh IDeology
-                </li>
-                
-                <li>
-                    SalesForce
-                </li>
-                
-                <li>
-                    Uber
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Twitter
-                </li>
-                
-                <li>
-                    Twitter
-                </li>
-                
-                <li>
-                    Adobe
-                </li>
-                
-                <li>
-                    Adobe
-                </li>
-                
-                <li>
-                    Yahoo
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Etsy
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Asana
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    PetsMart
-                </li>
-                
-                <li>
-                    Workiva
-                </li>
-                
-                <li>
-                    Ziba
-                </li>
-                
-                <li>
-                    Ziba
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Skype
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Trunk Club
-                </li>
-                
-                <li>
-                    Capsule CRM
-                </li>
-                
-                <li>
-                    Citrix
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    eBay
-                </li>
-                
-                <li>
-                    Assembla, Inc
-                </li>
-                
-                <li>
-                    Living Social
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    GlassDoor
-                </li>
-                
-                <li>
-                    Shutterfly
-                </li>
-                
-                <li>
-                    Citrix
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Booking
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Snapchat
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Dropbox
-                </li>
-                
-                <li>
-                    Zendesk
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    SalesForce
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    Hipmunk
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Vine
-                </li>
-                
-                <li>
-                    Pocket
-                </li>
-                
-                <li>
-                    Pinterest
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Trunk Club
-                </li>
-                
-                <li>
-                    Groupon
-                </li>
-                
-                <li>
-                    Asana
-                </li>
-                
-                <li>
-                    Eventbrite
-                </li>
-                
-                <li>
-                    Zendesk
-                </li>
-                
-                <li>
-                    Intercom
-                </li>
-                
-                <li>
-                    Pivotal Labs
-                </li>
-                
-                <li>
-                    SugarSync
-                </li>
-                
-                <li>
-                    Pivotal Labs
-                </li>
-                
-                <li>
-                    Pivotal Labs
-                </li>
-                
-                <li>
-                    Uber
-                </li>
-                
-                <li>
-                    Uber
-                </li>
-                
-                <li>
-                    LinkedIn
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Workiva
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Evernote
-                </li>
-                
-                <li>
-                    Evernote
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    YouTube
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    FileMaker Inc
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Snapfish
-                </li>
-                
-                <li>
-                    Snapfish
-                </li>
-                
-                <li>
-                    Trunk Club
-                </li>
-                
-                <li>
-                    ETrade
-                </li>
-                
-                <li>
-                    Gawker Media
-                </li>
-                
-                <li>
-                    Asana
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Citrix
-                </li>
-                
-                <li>
-                    Citrix
-                </li>
-                
-                <li>
-                    Pivotal Labs
-                </li>
-                
-                <li>
-                    Foursquare
-                </li>
-                
-                <li>
-                    Intercom
-                </li>
-                
-                <li>
-                    Etsy
-                </li>
-                
-                <li>
-                    Dwolla
-                </li>
-                
-                <li>
-                    SoundCloud
-                </li>
-                
-                <li>
-                    Hipmunk
-                </li>
-                
-                <li>
-                    Kayak
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Kayak
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Zillow
-                </li>
-                
-                <li>
-                    Adobe
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Etsy
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Ziba
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    AvroKO
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Vimeo
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    Adobe
-                </li>
-                
-                <li>
-                    Adobe
-                </li>
-                
-                <li>
-                    Siegel Gale
-                </li>
-                
-                <li>
-                    3M
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Living Social
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    MindJet
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Trulia
-                </li>
-                
-                <li>
-                    Foursquare
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    3M
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Groupon
-                </li>
-                
-                <li>
-                    SalesForce
-                </li>
-                
-                <li>
-                    Etsy
-                </li>
-                
-                <li>
-                    Castlight Health
-                </li>
-                
-                <li>
-                    Pivotal Labs
-                </li>
-                
-                <li>
-                    Credit Karma
-                </li>
-                
-                <li>
-                    LivePerson
-                </li>
-                
-                <li>
-                    LivePerson
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Uber
-                </li>
-                
-                <li>
-                    Eventbrite
-                </li>
-                
-                <li>
-                    GlassDoor
-                </li>
-                
-                <li>
-                    Adobe
-                </li>
-                
-                <li>
-                    Dropbox
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    iRobot
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    ETrade
-                </li>
-                
-                <li>
-                    3M
-                </li>
-                
-                <li>
-                    Eventbrite
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Yeh IDeology
-                </li>
-                
-                <li>
-                    Amplify
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    HP
-                </li>
-                
-                <li>
-                    SalesForce
-                </li>
-                
-                <li>
-                    eBay
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Dropbox
-                </li>
-                
-                <li>
-                    SalesForce
-                </li>
-                
-                <li>
-                    iRise
-                </li>
-                
-                <li>
-                    GreatSchools
-                </li>
-                
-                <li>
-                    Amplify
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    HP
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    FreshBooks
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Atlassian
-                </li>
-                
-                <li>
-                    Citrix
-                </li>
-                
-                <li>
-                    DigitasLBi
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Amplify
-                </li>
-                
-                <li>
-                    Amplify
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Kayak
-                </li>
-                
-                <li>
-                    TenMarks
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    PayPal
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Groupon
-                </li>
-                
-                <li>
-                    GE
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    PayPal
-                </li>
-                
-                <li>
-                    Twitter
-                </li>
-                
-                <li>
-                    eBay
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Quidsi Inc.
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Twitter
-                </li>
-                
-                <li>
-                    Quidsi Inc.
-                </li>
-                
-                <li>
-                    Roku
-                </li>
-                
-                <li>
-                    Etsy
-                </li>
-                
-                <li>
-                    Twitter
-                </li>
-                
-                <li>
-                    Twitter
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Deviant Art
-                </li>
-                
-                <li>
-                    Genuine Interactive
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    TenMarks
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Woot
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Roku
-                </li>
-                
-                <li>
-                    GoPro
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Pinterest
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    Eventbrite
-                </li>
-                
-                <li>
-                    LivePerson
-                </li>
-                
-                <li>
-                    Zoosk
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    iwantmyname
-                </li>
-                
-                <li>
-                    Zendesk
-                </li>
-                
-                <li>
-                    Idean
-                </li>
-                
-                <li>
-                    Trunk Club
-                </li>
-                
-                <li>
-                    MindJet
-                </li>
-                
-                <li>
-                    Kayak
-                </li>
-                
-                <li>
-                    Airware
-                </li>
-                
-                <li>
-                    Double Helix
-                </li>
-                
-                <li>
-                    Foursquare
-                </li>
-                
-                <li>
-                    Zillow
-                </li>
-                
-                <li>
-                    EAT24
-                </li>
-                
-                <li>
-                    Yahoo
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    CFA Institute
-                </li>
-                
-                <li>
-                    Workiva
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    YouTube
-                </li>
-                
-                <li>
-                    Yahoo
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    SurveyMonkey
-                </li>
-                
-                <li>
-                    WP Engine
-                </li>
-                
-                <li>
-                    eBay
-                </li>
-                
-                <li>
-                    PayPal
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Walmart
-                </li>
-                
-                <li>
-                    Human Practice
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Yahoo
-                </li>
-                
-                <li>
-                    ETrade
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Etsy
-                </li>
-                
-                <li>
-                    ETrade
-                </li>
-                
-                <li>
-                    Vine
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    LinkedIn
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Spiceworks
-                </li>
-                
-                <li>
-                    Asana
-                </li>
-                
-                <li>
-                    Twitter
-                </li>
-                
-                <li>
-                    Franklin Templeton Investments
-                </li>
-                
-                <li>
-                    Qstream
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    YouTube
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    HP
-                </li>
-                
-                <li>
-                    HP
-                </li>
-                
-                <li>
-                    LinkedIn
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Microsoft
-                </li>
-                
-                <li>
-                    Acquia
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    FreshBooks
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Living Social
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Zillow
-                </li>
-                
-                <li>
-                    Facebook
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Credit Karma
-                </li>
-                
-                <li>
-                    Spiceworks
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Citrix
-                </li>
-                
-                <li>
-                    Adobe
-                </li>
-                
-                <li>
-                    SalesForce
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    YouTube
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    greenhouse
-                </li>
-                
-                <li>
-                    Amplify
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Yahoo
-                </li>
-                
-                <li>
-                    Yahoo
-                </li>
-                
-                <li>
-                    Uber
-                </li>
-                
-                <li>
-                    FreshBooks
-                </li>
-                
-                <li>
-                    Intuit
-                </li>
-                
-                <li>
-                    Groupon
-                </li>
-                
-                <li>
-                    Apple
-                </li>
-                
-                <li>
-                    PayPal
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Credit Karma
-                </li>
-                
-                <li>
-                    Intel
-                </li>
-                
-                <li>
-                    Syapse
-                </li>
-                
-                <li>
-                    Booking
-                </li>
-                
-                <li>
-                    Google
-                </li>
-                
-                <li>
-                    YouTube
-                </li>
-                
-                <li>
-                    Amazon
-                </li>
-                
-                <li>
-                    Kayak
-                </li>
-                
-              </ul>
-
-
-                <h1 class="title">About</h1>
-                <div class="content">
-                    <p>Lorem markdownum aequalis strigis. <em>Saetigeri iubeas</em>, vultu huic alvum nondum
-                  de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-                  crimen habet Priamum nec.</p>
-
-                  <h2 id="ne-verba-patulosque-numen-vix-libet">Ne verba patulosque numen vix libet</h2>
-
-                  <p>Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-                  Ignibus inpatiens explorat, te tegens <em>ferro nocere haud</em>, et Dulichium tui
-                  male! Quo sed <a href="#vexant-achivi">fuit flexit et</a> hic die solido, gloria?</p>
-
-                  <ol>
-                    <li>Cum det dixit Parcarum qui spemque est</li>
-                    <li>Exit ex huic</li>
-                    <li>Quod consiste agitataque claustraque vicina videt lacertis</li>
-                    <li>Loquor videt</li>
-                    <li>Ardua non igne caelesti coniugis cognovi diversorum</li>
-                    <li>Per nunc pariterque saeva vindicet</li>
-                  </ol>
-
-                  <p>Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco <em>vati</em>
-                  dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-                  Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-                  esse iam feres mortis Plurima.</p>
-
-                  <h2 id="postquam-tamen">Postquam tamen</h2>
-
-                  <p>Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-                  et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-                  licet! Inserui quamvis Clymeni.</p>
-
-                  <ul>
-                    <li>Parens est studiisque interea</li>
-                    <li>Pro istis mediis carnes iste nec imperat</li>
-                    <li>Te vocas orat nisi quantumque castra</li>
-                    <li>Gestumque crepuscula esse videntur coegit</li>
-                    <li>Ambo videtque gerat aquae ferens vagina</li>
-                    <li>Adde leviter faciam tetigisse regunt concava in</li>
-                  </ul>
-
-                  <p>Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-                  incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-                  vis, saxo recepta <a href="#fati">membra contractosque</a> remigis <a href="#dissipat">vulnere vetus
-                  parte</a> indignata supera.</p>
-
-                  <p>Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-                  iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-                  et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-                  somnus, fortius ante ille. Superasse induit <em>celare</em> cadunt, ut Armeniae per
-                  tamen lentis spectat, Titania est animo.</p>
-                </div>
-            </div>
-        </div>
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <h1>For hiring managers and growing UX Pros</h1>
+        <p>This is a collection of job descriptions over the years and across the industry. These are NOT open positions, but give you a feeling for how roles are described at different companies.</p>
+        <p>All the content from this site was collected by volunteers. Don't see job description from a company you watch? Submit it to the collection!</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOiKt2pRlYj2zkmZPX1LmN_a7X9Cpyx8ldzSZHECytgwPT1g/viewform?usp=sf_link" class="button">Submit Description</a>
+      </div>
+      
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt=UX Job Descriptions class="intro-image intro-image-absolute intro-image-hide-mobile" src="images/illustrations/pointing.svg" />
+      </div>
+      
     </div>
   </div>
 </div>
-<!--
+
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
       
+      
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/services/accounting/">Accounting</a>
+              Design/Product Ops
             </h2>
-            <p>Financial accounting (or financial accountancy) is the field of accounting concerned with the sum...</p>
+            <ul>
+              
+              <li>
+                <a href="/job/senior-manager-global-product-operations-ecommerce-walmart-2014">Senior Manager Global Product Operations - eCommerce</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/designproduct-ops">All Design/Product Ops Descriptions</a></strong></p>
           </div>
         </div>
       </div>
@@ -1853,10 +127,29 @@
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/services/tax-preperation/">Tax Preperation</a>
+              Product Management
             </h2>
-            <p>Lorem markdownum Achaica revolutaque amore, penitus puppes nec furit,
-clipeus fatetur, mira inter...</p>
+            <ul>
+              
+              <li>
+                <a href="/job/digital-product-manager-mobile-etrade-2014">Digital Product Manager - Mobile</a>
+              </li>
+              
+              <li>
+                <a href="/job/director-of-product-management-trulia-2014">Director of Product Management</a>
+              </li>
+              
+              <li>
+                <a href="/job/director,-product-management-uber-2014">Director, Product Management</a>
+              </li>
+              
+              <li>
+                <a href="/job/engineering-product-manager-apple-2014">Engineering Product Manager</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/product-management">All Product Management Descriptions</a></strong></p>
           </div>
         </div>
       </div>
@@ -1865,10 +158,29 @@ clipeus fatetur, mira inter...</p>
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/services/business-advisory/">Business Advisory</a>
+              UX Content/Writing
             </h2>
-            <p>Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares
-ignisque quaerit ded...</p>
+            <ul>
+              
+              <li>
+                <a href="/job/communication-designer-instagram-2014">Communication Designer</a>
+              </li>
+              
+              <li>
+                <a href="/job/content-strategist-facebook-2014">Content Strategist</a>
+              </li>
+              
+              <li>
+                <a href="/job/copywriter-facebook-2014">Copywriter</a>
+              </li>
+              
+              <li>
+                <a href="/job/copywriter-shutterfly-2014">Copywriter</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/ux-contentwriting">All UX Content/Writing Descriptions</a></strong></p>
           </div>
         </div>
       </div>
@@ -1877,10 +189,29 @@ ignisque quaerit ded...</p>
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/services/superannuation/">Superannuation</a>
+              UX Design
             </h2>
-            <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavi...</p>
+            <ul>
+              
+              <li>
+                <a href="/job/art-director-user-experience-lead-intel-2014">Art Director & User Experience Lead</a>
+              </li>
+              
+              <li>
+                <a href="/job/chair-of-interaction-design-yeh-ideology-2014">Chair of Interaction Design</a>
+              </li>
+              
+              <li>
+                <a href="/job/design-director-instagram-2014">Design Director</a>
+              </li>
+              
+              <li>
+                <a href="/job/design-director-trunk-club-2014">Design Director</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/ux-design">All UX Design Descriptions</a></strong></p>
           </div>
         </div>
       </div>
@@ -1889,10 +220,29 @@ de obside ut laniavi...</p>
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/services/business-sales/">Business Sales</a>
+              UX Engineering
             </h2>
-            <p>Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
-vixque dixit negari ullis stamina...</p>
+            <ul>
+              
+              <li>
+                <a href="/job/creative-technologist-prototyper-frontend-developer-apple-2014">Creative Technologist / Prototyper / Front-end Developer</a>
+              </li>
+              
+              <li>
+                <a href="/job/design-engineer-amazon-2014">Design Engineer</a>
+              </li>
+              
+              <li>
+                <a href="/job/design-technologist-amazon-2014">Design Technologist</a>
+              </li>
+              
+              <li>
+                <a href="/job/design-technologist-amazon-2014">Design Technologist</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/ux-engineering">All UX Engineering Descriptions</a></strong></p>
           </div>
         </div>
       </div>
@@ -1901,23 +251,130 @@ vixque dixit negari ullis stamina...</p>
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="/services/mergers/">Mergers</a>
+              UX Project/Program Management
             </h2>
-            <p>Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavi...</p>
+            <ul>
+              
+              <li>
+                <a href="/job/associate-product-manager-google-2014">Associate Product Manager</a>
+              </li>
+              
+              <li>
+                <a href="/job/design-program-manager-facebook-2014">Design Program Manager</a>
+              </li>
+              
+              <li>
+                <a href="/job/industrial-design-program-manager-amazon-2014">Industrial Design Program Manager</a>
+              </li>
+              
+              <li>
+                <a href="/job/mobile-design-producer-google-2014">Mobile Design Producer</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/ux-projectprogram-management">All UX Project/Program Management Descriptions</a></strong></p>
           </div>
         </div>
       </div>
       
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="/services">View All Services</a>
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              UX Research
+            </h2>
+            <ul>
+              
+              <li>
+                <a href="/job/design-researcher-2-microsoft-2014">Design Researcher 2</a>
+              </li>
+              
+              <li>
+                <a href="/job/director-of-user-research-salesforce-2014">Director of User Research</a>
+              </li>
+              
+              <li>
+                <a href="/job/hardware-human-factorsergonomics-researcher-apple-2014">Hardware Human Factors/Ergonomics Researcher</a>
+              </li>
+              
+              <li>
+                <a href="/job/head-of-research-facebook-2014">Head of Research</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/ux-research">All UX Research Descriptions</a></strong></p>
+          </div>
+        </div>
       </div>
+      
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              UX/UI Design
+            </h2>
+            <ul>
+              
+              <li>
+                <a href="/job/design-intern-zillow-2014">Design Intern</a>
+              </li>
+              
+              <li>
+                <a href="/job/designer-microsoft-2014">Designer</a>
+              </li>
+              
+              <li>
+                <a href="/job/designer-mobile-mail-chimp-2014">Designer - Mobile</a>
+              </li>
+              
+              <li>
+                <a href="/job/junior-uxui-designer-citrix-2014">Junior UX/UI Designer</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/uxui-design">All UX/UI Design Descriptions</a></strong></p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-12 col-md-4 mb-1">
+        <div class="service service-summary">
+          <div class="service-content">
+            <h2 class="service-title">
+              Visual/UI Design
+            </h2>
+            <ul>
+              
+              <li>
+                <a href="/job/lead-visual-designer-amazon-2014">Lead Visual Designer</a>
+              </li>
+              
+              <li>
+                <a href="/job/mobile-visual-designer-google-2014">Mobile Visual Designer</a>
+              </li>
+              
+              <li>
+                <a href="/job/principal-visual-designer-intuit-2014">Principal Visual Designer</a>
+              </li>
+              
+              <li>
+                <a href="/job/senior-mobile-visual-designer-foursquare-2014">Senior Mobile Visual Designer</a>
+              </li>
+              
+            </ul>
+
+            <p><strong><a href="/role/visualui-design">All Visual/UI Design Descriptions</a></strong></p>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </div>
--->
+
 <!--
 
 <div class="strip strip-grey">
@@ -1972,20 +429,12 @@ de obside ut laniavi...</p>
           <ul>
             
             
-            <li class="active">
-              <a href="/">Home</a>
-            </li>
-            
             <li class="">
               <a href="/job/">All Jobs</a>
             </li>
             
             <li class="">
-              <a href="/company/">By Company</a>
-            </li>
-            
-            <li class="">
-              <a href="/role/">By Role</a>
+              <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSTfBGp0ZuhaBV-i9PnXJ5Deannl0iSsRpyiMosuquBQZbABNmQS9vnS9oyPRQdicpwhi3n4lYqFR5Y/pub?gid=1856600599&single=true&output=csv">&darr Download CSV Data</a>
             </li>
             
           </ul>
@@ -2002,9 +451,9 @@ de obside ut laniavi...</p>
           
             <div class="social">
   
-    <a href="https://github.com/zerostaticthemes/jekyll-serif-theme" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
+    <a href="https://github.com/hannahd/uxjobdescriptions" target="blank"><img src="/images/social/github.svg" title="Github" alt="Github" /></a>
   
-    <a href="https://twitter.com/zerostaticio" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
+    <a href="https://twitter.com/hannahpixels" target="blank"><img src="/images/social/twitter.svg" title="Twitter" alt="Twitter" /></a>
   
 </div>
 

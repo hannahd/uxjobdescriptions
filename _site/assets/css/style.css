@@ -3532,7 +3532,7 @@ ul li, ol li { padding: 0; margin: 0; }
 
 .button:hover { color: #ffffff; background-color: #606fc7; transform: translateY(-1px); text-decoration: none; }
 
-.call { position: relative; overflow: hidden; background-color: #E8EAF6; border-radius: 4px; width: 100%; display: flex; align-items: center; flex-direction: row; flex-wrap: wrap; z-index: 2; }
+.call { position: relative; overflow: hidden; background-color: #E8EAF6; border-radius: 4px; width: 100%; padding: 20px; display: flex; align-items: center; flex-direction: row; flex-wrap: wrap; z-index: 2; }
 
 @media (min-width: 576px) { .call { align-items: center; flex-direction: row; flex-wrap: wrap; } }
 
@@ -3675,6 +3675,8 @@ ul li, ol li { padding: 0; margin: 0; }
 .social a:hover { opacity: 0.8; }
 
 .page-home .job-meta { opacity: 80%; font-family: "Playfair Display", serif, -apple-system; font-size: 1.2em; margin-top: -15px; margin-bottom: 60px; }
+
+.page-home .service-content ul { margin: 0 0 0 20px; }
 
 .team-summary { display: flex; flex-wrap: wrap; flex-direction: row; }
 

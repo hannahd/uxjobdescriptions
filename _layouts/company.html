@@ -9,46 +9,16 @@ layout: default
                 <h1 class="title">{{page.company}}</h1>
                 <div class="content">
                   {% assign jobs = site.data.jobs | where: "company", page.company | sort: 'name'  %}
-                  <!--<ul style="list-style: none;">-->
                   {% for job in jobs %}
                   <h2><strong>{{job.title}}</strong></h2>
-                  <p class="job-meta"><em>{{page.location}} from {{ page.date | date: "%Y" }}</em></p>
+                  <p class="job-meta"><em>{{job.location}} from {{ job.date | date: "%Y" }}</em></p>
                   <p>{{job.summary | newline_to_br }}</p>
 
-                  <p><a href="">View Full Job Description &rarr;</a></p>
+                  <p><a href="/job/{{ job.slug }}">View Full Job Description &rarr;</a></p>
                   <br><hr><br>
-                    <!--  <li><a href="/job/{{ job.slug }}"><strong>{{job.title}}</strong> at {{job.company}}</a></li>-->
                   {% endfor %}
-                  <!--</ul>-->
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!--
-<p>{{page.summary | newline_to_br }}</p>
-
-{% if page.responsibilities %}
-<h2>Responsibilities</h2>
-<p>{{page.responsibilities | newline_to_br }}</p>
-{% endif %}
-
-{% if page.skills %}
-<h2>Skills</h2>
-<p>{{page.skills | newline_to_br }}</p>
-{% endif %}
-
-{% if page.min_qual %}
-<h2>Minimum Qualifications</h2>
-<p>{{page.min_qual | newline_to_br }}</p>
-{% endif %}
-
-{% if page.pref_qual %}
-<h2>Preferred Qualifications</h2>
-<p>{{page.pref_qual | newline_to_br }}</p>
-{% endif %}
-
-
-<br><br><hr><br><br><br>
-<p>Check out more <a href="/role/{{ page.role }}">{{page.role}}</a> job descriptions.</p>
--->

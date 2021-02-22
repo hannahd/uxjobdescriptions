@@ -2,165 +2,58 @@
 title: UX Job Descriptions
 layout: default
 bodyClass: page-home
+intro_image: "images/illustrations/pointing.svg"
+intro_image_absolute: true
+intro_image_hide_on_mobile: true
 ---
+
 
 <div class="intro">
   <div class="container">
     <div class="row justify-content-start">
-      <div class="col-12 col-md-8">
-            <div class="service service-single">
-
-
-              <h1>People (generated from YAML)</h1>
-
-              <ul>
-              {% for person in site.data.members %}
-                <li><a href="{{ person.full_name | datapage_url: 'people' }}">{{person.full_name}}</a></li>
-              {% endfor %}
-              </ul>
-
-              <h1>Pets (generated from JSON)</h1>
-
-              <ul>
-              {% for pet in site.data.pets %}
-                  <li><a href="{{ pet.pet_name | datapage_url: 'pets' }}">{{pet.pet_name}}</a></li>
-              {% endfor %}
-              </ul>
-
-              <h1>Filter Examples (generated from book in YAML)</h1>
-
-              <h2>Approach 1: Filter Links, Generate all pages</h2>
-
-              <p>In the page <a href="books/index.html">books</a>, the books are organized in two lists: books I have read and those I have not.  However a page is still generated for each book. <b>This is not a filter on the pages being generated: it is only a filter on the links being generated.</b></p>
-
-              <h2>Approach 2: <tt>filter</tt> keyword</h2>
-
-              <p>If the yaml matter has a boolean field (for instance: <tt>filter</tt> or, more evocatively, <tt>publish</tt>), I can specify it in <tt>_config</tt> to select what pages have to be generated.</p>
-
-              <h2>Approach 3: <tt>filter_condition</tt> keyword</h2>
-
-              <p>I can use the <tt>filter_condition</tt> field in <tt>config.yml</tt>. The field takes as argument a string with ruby expression which should evaluate to a Boolean value.  The <tt>filter_condition</tt> is used as an additional selector on top of the <tt>filter</tt> condition.</p>
-
-              <p>See the documentation for more details.</p>
-
-              <h1>Hierarchy Example</h1>
-
-              <p>If your data is structured in a hierarhcy, specify the path to access your data in the <tt>data</tt> field.</p>
-
-              <p>See the file <tt>_data/hierarchy.yml</tt> for a working example.  The pages generated are the following:</p>
-
-              <ul>
-                  {% for person in site.data.hierarchy.people %}
-                  <li>
-                      <a href="{{ person.full_name | datapage_url: 'hierarchy' }}">{{person.full_name}}</a>
-                  </li>
-                  {% endfor %}
-              </ul>
-
-<hr><hr>
-
-              {% assign groups = site.data.jobs | where: "company", "Instagram" | group_by: "company" | sort: 'name'  %}
-              <ul>
-              {% for g in groups %}
-                {{g}}
-                <br><br>
-              {% endfor %}
-              </ul>
-
-
-<hr>
-
-              <ul>
-                {% for job in site.data.jobs %}
-                <li>
-                    {{ job.company }}
-                </li>
-                {% endfor %}
-              </ul>
-
-
-                <h1 class="title">About</h1>
-                <div class="content">
-                    <p>Lorem markdownum aequalis strigis. <em>Saetigeri iubeas</em>, vultu huic alvum nondum
-                  de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-                  crimen habet Priamum nec.</p>
-
-                  <h2 id="ne-verba-patulosque-numen-vix-libet">Ne verba patulosque numen vix libet</h2>
-
-                  <p>Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-                  Ignibus inpatiens explorat, te tegens <em>ferro nocere haud</em>, et Dulichium tui
-                  male! Quo sed <a href="#vexant-achivi">fuit flexit et</a> hic die solido, gloria?</p>
-
-                  <ol>
-                    <li>Cum det dixit Parcarum qui spemque est</li>
-                    <li>Exit ex huic</li>
-                    <li>Quod consiste agitataque claustraque vicina videt lacertis</li>
-                    <li>Loquor videt</li>
-                    <li>Ardua non igne caelesti coniugis cognovi diversorum</li>
-                    <li>Per nunc pariterque saeva vindicet</li>
-                  </ol>
-
-                  <p>Locus evicit loquuntur Tyrrhena omnes, obstipui pugnabant temptavit Phoco <em>vati</em>
-                  dabant deus. Memorata haberet sepulcrales gentisque dum sic, in flumina templa!
-                  Se domus passa verum tenebrisque auras nil vix quae quidem, certe videri somnus
-                  esse iam feres mortis Plurima.</p>
-
-                  <h2 id="postquam-tamen">Postquam tamen</h2>
-
-                  <p>Et nec ingentem est minus faciunt praecipue posse auctoremque sedes transmittere
-                  et pedes miratur erat animaeque. Tellus admonuit humanam funes, sagittis et
-                  licet! Inserui quamvis Clymeni.</p>
-
-                  <ul>
-                    <li>Parens est studiisque interea</li>
-                    <li>Pro istis mediis carnes iste nec imperat</li>
-                    <li>Te vocas orat nisi quantumque castra</li>
-                    <li>Gestumque crepuscula esse videntur coegit</li>
-                    <li>Ambo videtque gerat aquae ferens vagina</li>
-                    <li>Adde leviter faciam tetigisse regunt concava in</li>
-                  </ul>
-
-                  <p>Superi monilia omnes Cyprio Scylla cibos punica quae succincta pallent de
-                  incubat hostes montibus, de moderato efficiet vulnere. Letum Atalanta Pallas,
-                  vis, saxo recepta <a href="#fati">membra contractosque</a> remigis <a href="#dissipat">vulnere vetus
-                  parte</a> indignata supera.</p>
-
-                  <p>Quantum auxilium datus; sed pineta et, iuvenes redito; credas mensae, meum. Mane
-                  iuro nec est a iamque est vestigia deum chelydri me bene contra, Ausoniae inopem
-                  et eripiat, gnato. Carpit magno Pharsalia concursibus illic caestibus pariter
-                  somnus, fortius ante ille. Superasse induit <em>celare</em> cadunt, ut Armeniae per
-                  tamen lentis spectat, Titania est animo.</p>
-                </div>
-            </div>
-        </div>
+      <div class="col-12 col-md-7 col-lg-6 order-2 order-md-1">
+        <h1>For hiring managers and growing UX Pros</h1>
+        <p>This is a collection of job descriptions over the years and across the industry. These are NOT open positions, but give you a feeling for how roles are described at different companies.</p>
+        <p>All the content from this site was collected by volunteers. Don't see job description from a company you watch? Submit it to the collection!</p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfOiKt2pRlYj2zkmZPX1LmN_a7X9Cpyx8ldzSZHECytgwPT1g/viewform?usp=sf_link" class="button">Submit Description</a>
+      </div>
+      {% if page.intro_image %}
+      <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
+        <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>
-<!--
+
 <div class="strip">
   <div class="container pt-6 pb-6 pb-md-10">
     <div class="row justify-content-start">
-      {% for service in site.services %}
+      {% assign roles = site.data.jobs | group_by: "role" | sort: 'name'  %}
+      {% for role in roles  %}
       <div class="col-12 col-md-4 mb-1">
         <div class="service service-summary">
           <div class="service-content">
             <h2 class="service-title">
-              <a href="{{site.baseurl}}{{ service.url }}">{{ service.title }}</a>
+              {{ role.name }}
             </h2>
-            <p>{{ service.content | markdownify | strip_html | truncate: 100 }}</p>
+            <ul>
+              {% for item in role.items limit:4 %}
+              <li>
+                <a href="/job/{{ item.slug }}">{{ item.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+
+            <p><strong><a href="/role/{{ role.items[0].role_slug }}">All {{ role.name }} Descriptions</a></strong></p>
           </div>
         </div>
       </div>
       {% endfor %}
     </div>
-    <div class="row justify-content-center">
-      <div class="col-auto">
-        <a class="button button-primary" href="{{site.baseurl}}/services">View All Services</a>
-      </div>
-    </div>
   </div>
 </div>
--->
+
 <!--
 {% if site.data.features %}
 <div class="strip strip-grey">
