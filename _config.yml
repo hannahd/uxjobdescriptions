@@ -1,5 +1,5 @@
 baseurl: '/'
-abs-url: 'https://hannahd.github.io/uxjobdescriptions'
+abs_url: 'https://hannahd.github.io/uxjobdescriptions'
 exclude: ['README.md']
 permalink: pretty
 title: 'UX Job Descriptions'

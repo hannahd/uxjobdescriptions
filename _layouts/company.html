@@ -14,7 +14,7 @@ layout: default
                   <p class="job-meta"><em>{{job.location}} from {{ job.date | date: "%Y" }}</em></p>
                   <p>{{job.summary | newline_to_br }}</p>
 
-                  <p><a href="{{ site.abs-url }}/job/{{ job.slug }}">View Full Job Description &rarr;</a></p>
+                  <p><a href="{{ site.abs_url }}/job/{{ job.slug }}">View Full Job Description &rarr;</a></p>
                   <br><hr><br>
                   {% endfor %}
                 </div>

@@ -1,20 +1,20 @@
 main:
   - name: "Home"
-    url: "{{ site.abs-url }}"
+    url: ""
     weight: 1
   - name: "All Jobs"
-    url: "{{ site.abs-url }}/job/"
+    url: "/job/"
     weight: 2
   - name: "By Company"
-    url: "{{ site.abs-url }}/company/"
+    url: "/company/"
     weight: 3
   - name: "By Role"
-    url: "{{ site.abs-url }}/role/"
+    url: "/role/"
     weight: 4
 
 footer:
   - name: "All Jobs"
-    url: "{{ site.abs-url }}/job/"
+    url: "/job/"
     weight: 2
   - name: "&darr; Download CSV Data"
     url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSTfBGp0ZuhaBV-i9PnXJ5Deannl0iSsRpyiMosuquBQZbABNmQS9vnS9oyPRQdicpwhi3n4lYqFR5Y/pub?gid=1856600599&single=true&output=csv"

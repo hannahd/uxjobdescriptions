@@ -19,7 +19,7 @@ intro_image_hide_on_mobile: true
       </div>
       {% if page.intro_image %}
       <div class="col-12 col-md-5 col-lg-6 order-1 order-md-2 position-relative">
-        <img alt={{ page.title }} class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
+        <img alt="{{ page.title }}" class="intro-image{% if page.intro_image_absolute %} intro-image-absolute{% endif %}{% if page.intro_image_hide_on_mobile %} intro-image-hide-mobile{% endif %}" src="{{ page.intro_image | relURL }}" />
       </div>
       {% endif %}
     </div>
@@ -40,12 +40,12 @@ intro_image_hide_on_mobile: true
             <ul>
               {% for item in role.items limit:4 %}
               <li>
-                <a href="{{ site.abs-url }}/job/{{ item.slug }}">{{ item.title }}</a>
+                <a href="{{ site.abs_url }}/job/{{ item.slug }}">{{ item.title }}</a>
               </li>
               {% endfor %}
             </ul>
 
-            <p><strong><a href="{{ site.abs-url }}/role/{{ role.items[0].role_slug }}">All {{ role.name }} Descriptions</a></strong></p>
+            <p><strong><a href="{{ site.abs_url }}/role/{{ role.items[0].role_slug }}">All {{ role.name }} Descriptions</a></strong></p>
           </div>
         </div>
       </div>

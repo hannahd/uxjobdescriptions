@@ -6,7 +6,7 @@ bodyClass: page-home
 <!--date,slug,company,location,title,level,role,summary,responsibilities,skills,min_qual,pref_qual-->
 
 
-<h1 class="job-meta">at <a href="{{ site.abs-url }}/company/{{ page.company }}">{{page.company}}</a> in {{page.location}} from {{ page.date | date: "%Y" }}</h1>
+<h1 class="job-meta">at <a href="{{ site.abs_url }}/company/{{ page.company }}">{{page.company}}</a> in {{page.location}} from {{ page.date | date: "%Y" }}</h1>
 
 <p>{{page.summary | newline_to_br | markdownify }}</p>
 
@@ -32,4 +32,4 @@ bodyClass: page-home
 
 
 <br><br><hr><br><br><br>
-<p>Check out more <a href="{{ site.abs-url }}/role/{{ page.role_slug }}">{{page.role}}</a> job descriptions.</p>
+<p>Check out more <a href="{{ site.abs_url }}/role/{{ page.role_slug }}">{{page.role}}</a> job descriptions.</p>
