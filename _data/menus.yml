@@ -1,21 +1,21 @@
 main:
   - name: "Home"
-    url: "/"
+    url: "{{baseurl}}"
     weight: 1
   - name: "All Jobs"
-    url: "/job/"
+    url: "{{baseurl}}/job/"
     weight: 2
   - name: "By Company"
-    url: "/company/"
+    url: "{{baseurl}}/company/"
     weight: 3
   - name: "By Role"
-    url: "/role/"
+    url: "{{baseurl}}/role/"
     weight: 4
 
 footer:
   - name: "All Jobs"
-    url: "/job/"
+    url: "{{baseurl}}/job/"
     weight: 2
-  - name: "&darr Download CSV Data"
+  - name: "&darr; Download CSV Data"
     url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSTfBGp0ZuhaBV-i9PnXJ5Deannl0iSsRpyiMosuquBQZbABNmQS9vnS9oyPRQdicpwhi3n4lYqFR5Y/pub?gid=1856600599&single=true&output=csv"
     weight: 3
