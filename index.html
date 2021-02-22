@@ -40,12 +40,12 @@ intro_image_hide_on_mobile: true
             <ul>
               {% for item in role.items limit:4 %}
               <li>
-                <a href="{{baseurl}}/job/{{ item.slug }}">{{ item.title }}</a>
+                <a href="{{ site.abs-url }}/job/{{ item.slug }}">{{ item.title }}</a>
               </li>
               {% endfor %}
             </ul>
 
-            <p><strong><a href="{{baseurl}}/role/{{ role.items[0].role_slug }}">All {{ role.name }} Descriptions</a></strong></p>
+            <p><strong><a href="{{ site.abs-url }}/role/{{ role.items[0].role_slug }}">All {{ role.name }} Descriptions</a></strong></p>
           </div>
         </div>
       </div>
