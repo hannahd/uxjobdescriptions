@@ -11,10 +11,10 @@ layout: default
                   {% assign jobs = site.data.jobs | where: "role", page.role | sort: 'name'  %}
                   {% for job in jobs %}
                   <h2><strong>{{job.title}}</strong></h2>
-                  <p class="job-meta"><em><a href="{{baseurl}}/company/{{ job.company }}">{{job.company}}</a> in {{job.location}} from {{ page.date | date: "%Y" }}</em></p>
+                  <p class="job-meta"><em><a href="{{site.abs-url}}/company/{{ job.company }}">{{job.company}}</a> in {{job.location}} from {{ page.date | date: "%Y" }}</em></p>
                   <p>{{job.summary | newline_to_br }}</p>
 
-                  <p><a href="{{baseurl}}/job/{{ job.slug }}">View Full Job Description &rarr;</a></p>
+                  <p><a href="{{site.abs-url}}/job/{{ job.slug }}">View Full Job Description &rarr;</a></p>
                   <br><hr><br>
                   {% endfor %}
                 </div>
