@@ -33,7 +33,7 @@ page_gen:
     dir: 'job'
 
   - data: 'jobs'
-    template: 'job'
+    template: 'company'
     name: 'company'
     dir: 'company'
 

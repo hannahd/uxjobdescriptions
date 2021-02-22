@@ -62,10 +62,8 @@ bodyClass: page-home
               {% assign groups = site.data.jobs | where: "company", "Instagram" | group_by: "company" | sort: 'name'  %}
               <ul>
               {% for g in groups %}
-                {{g.name}} {{ g.items.size }}
+                {{g}}
                 <br><br>
-              <!--{% assign leads = g.items | where: "status", "lead" %}
-              <li>name : {{ g.name }} {{ leads.size }} leads</li>-->
               {% endfor %}
               </ul>
 

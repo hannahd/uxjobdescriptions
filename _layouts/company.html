@@ -1,0 +1,38 @@
+---
+title: {{page.title}}
+layout: page
+bodyClass: page-home
+---
+<!--date,slug,company,location,title,level,role,summary,responsibilities,skills,min_qual,pref_qual-->
+
+
+<h1 class="job-meta">at <a href="/company/{{ page.company }}">{{page.company}}</a> in {{page.location}} from {{ page.date | date: "%Y" }}</h1>
+
+
+{{page.items}}
+
+<p>{{page.summary | newline_to_br }}</p>
+
+{% if page.responsibilities %}
+<h2>Responsibilities</h2>
+<p>{{page.responsibilities | newline_to_br }}</p>
+{% endif %}
+
+{% if page.skills %}
+<h2>Skills</h2>
+<p>{{page.skills | newline_to_br }}</p>
+{% endif %}
+
+{% if page.min_qual %}
+<h2>Minimum Qualifications</h2>
+<p>{{page.min_qual | newline_to_br }}</p>
+{% endif %}
+
+{% if page.pref_qual %}
+<h2>Preferred Qualifications</h2>
+<p>{{page.pref_qual | newline_to_br }}</p>
+{% endif %}
+
+
+<br><br><hr><br><br><br>
+<p>Check out more <a href="/role/{{ page.role }}">{{page.role}}</a> job descriptions.</p>
