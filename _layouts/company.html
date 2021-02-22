@@ -1,16 +1,31 @@
 ---
-title: {{page.title}}
-layout: page
-bodyClass: page-home
+layout: default
 ---
-<!--date,slug,company,location,title,level,role,summary,responsibilities,skills,min_qual,pref_qual-->
 
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <div class="row justify-content-start">
+        <div class="col-12 col-md-8">
+            <div class="service service-single">
+                <h1 class="title">{{page.company}}</h1>
+                <div class="content">
+                  {% assign jobs = site.data.jobs | where: "company", page.company | sort: 'name'  %}
+                  <!--<ul style="list-style: none;">-->
+                  {% for job in jobs %}
+                  <h2><strong>{{job.title}}</strong></h2>
+                  <p class="job-meta"><em>{{page.location}} from {{ page.date | date: "%Y" }}</em></p>
+                  <p>{{job.summary | newline_to_br }}</p>
 
-<h1 class="job-meta">at <a href="/company/{{ page.company }}">{{page.company}}</a> in {{page.location}} from {{ page.date | date: "%Y" }}</h1>
-
-
-{{page.items}}
-
+                  <p><a href="">View Full Job Description &rarr;</a></p>
+                  <br><hr><br>
+                    <!--  <li><a href="/job/{{ job.slug }}"><strong>{{job.title}}</strong> at {{job.company}}</a></li>-->
+                  {% endfor %}
+                  <!--</ul>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
 <p>{{page.summary | newline_to_br }}</p>
 
 {% if page.responsibilities %}
@@ -36,3 +51,4 @@ bodyClass: page-home
 
 <br><br><hr><br><br><br>
 <p>Check out more <a href="/role/{{ page.role }}">{{page.role}}</a> job descriptions.</p>
+-->
